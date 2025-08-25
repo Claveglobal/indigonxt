@@ -1,0 +1,222 @@
+/* Fuentes personalizadas */
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-Thin-Trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-ThinItalic-Trial.otf") format("opentype");
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-Light.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-LightItalic-Trial.otf") format("opentype");
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-Regular-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-RegularItalic-Trial.otf") format("opentype");
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-Medium-Trial.otf") format("opentype");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-MediumItalic-Trial.otf") format("opentype");
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-Bold-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-BoldItalic-Trial.otf") format("opentype");
+  font-weight: 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-Black-Trial.otf") format("opentype");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Canela";
+  src: url("fonts/Canela-BlackItalic-Trial.otf") format("opentype");
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Clases de utilidad para fuentes */
+.font-canela {
+  font-family: "Canela", serif;
+}
+
+.font-inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* Clases específicas para títulos */
+.canela-thin {
+  font-family: "Canela", serif;
+  font-weight: 100;
+}
+.canela-light {
+  font-family: "Canela", serif;
+  font-weight: 300;
+}
+.canela-regular {
+  font-family: "Canela", serif;
+  font-weight: 400;
+}
+.canela-medium {
+  font-family: "Canela", serif;
+  font-weight: 500;
+}
+.canela-bold {
+  font-family: "Canela", serif;
+  font-weight: 700;
+}
+.canela-black {
+  font-family: "Canela", serif;
+  font-weight: 900;
+}
+
+#hero-content {
+  background-image: url("images/hero.webp");
+  background-size: cover;
+  background-position: center;
+}
+@media screen and (max-width: 768px) {
+  #hero-content {
+    background-image: url(images/hero-mobile.png);
+    background-size: contain;
+    background-position: top;
+    background-repeat: no-repeat;
+    background-color: #012639;
+  }
+}
+
+.inter {
+  font-family: "Inter", sans-serif;
+}
+
+/* Solo animaciones custom que Tailwind no tiene built-in */
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
+
+.shimmer::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  animation: shimmer 0.6s ease-in-out;
+}
+
+.shimmer:hover::before {
+  animation: shimmer 0.6s ease-in-out;
+}
+
+/* Ripple effect custom */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ripple::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 0;
+  height: 0;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.3);
+  transform: translate(-50%, -50%);
+  transition: width 0.6s, height 0.6s;
+}
+
+.ripple:active::after {
+  width: 300px;
+  height: 300px;
+}
+
+.mySwiper .swiper-slide {
+  text-align: center;
+  font-size: 18px;
+  background: #444;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: fit-content;
+}
+#gallerysmall .swiper-button-prev,
+#gallerysmall .swiper-button-next {
+  color: transparent !important;
+  text-align: center !important;
+}
+#gallerysmall .swiper-pagination-bullet-active {
+  background-color: #fff !important;
+}
