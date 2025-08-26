@@ -1,6 +1,17 @@
 <?php
 require 'vendor/autoload.php';
 
+$lines = file(__DIR__ . '/.env');
+foreach ($lines as $line) {
+    if (trim($line) && strpos($line, '=') !== false) {
+        list($name, $value) = explode('=', trim($line), 2);
+        putenv("$name=$value");
+        $_ENV[$name] = $value;
+        $_SERVER[$name] = $value;
+    }
+}
+
+
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
@@ -32,8 +43,8 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
             $mail->Host = "email-smtp.us-east-1.amazonaws.com";                   //Set the SMTP server to send through
             $mail->SMTPAuth   = true;
             $mail->SMTPSecure = 'tls';                        //Enable SMTP authentication
-            $mail->Username   = $user_mail;                     //SMTP username
-            $mail->Password   = $pass_mail;                               //SMTP password
+            $mail->Username   = $_ENV['user_mail'];                     //SMTP username
+            $mail->Password   = $_ENV['pass_mail'];                               //SMTP password
             $mail->Port       = 587;                                    //TCP port to connect to; use 587 if you have set `SMTPSecure = PHPMailer::ENCRYPTION_STARTTLS`
             //Recipients
             $mail->setFrom('noresponder@somosnxt.com', 'NXT');
