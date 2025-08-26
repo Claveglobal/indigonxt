@@ -205,7 +205,7 @@
   <!-- 4) Video -->
   <section class="py-16 px-6 flex items-center justify-center">
     <video class="w-full w-full sm:w-8/12" poster="images/video-poster.jpg" controls>
-      <source src="videos/indigo-promo.mp4" type="video/mp4">
+      <source src="https://www.somosnxt.com/indigo-videos/indigo-promo.mp4" type="video/mp4">
     </video>
   </section>
 
