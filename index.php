@@ -204,7 +204,6 @@
 
   <!-- 4) Video -->
   <section class="py-16 px-6 flex items-center justify-center">
-    <!--<iframe class="w-full max-w-4xl aspect-video" src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>-->
     <video class="w-full w-full sm:w-8/12" poster="images/video-poster.jpg" controls>
       <source src="videos/indigo-promo.mp4" type="video/mp4">
     </video>
@@ -274,9 +273,6 @@
           <div class="swiper-slide"><img src="images/gallery/6.png" alt="Render 6"></div>
           <div class="swiper-slide"><img src="images/gallery/7.png" alt="Render 7"></div>
           <div class="swiper-slide"><img src="images/gallery/8.png" alt="Render 8"></div>
-          <?php /*<div class="swiper-slide"><img src="images/gallery/9.png" alt="Render 9"></div>
-          <div class="swiper-slide"><img src="images/gallery/10.png" alt="Render 10"></div>
-          <div class="swiper-slide"><img src="images/gallery/11.png" alt="Render 11"></div> */ ?>
         </div>
       </div>
       <div class="flex space-x-2 mt-4">
