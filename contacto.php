@@ -1,13 +1,15 @@
 <?php
 require 'vendor/autoload.php';
 
-$lines = file(__DIR__ . '/.env');
-foreach ($lines as $line) {
-    if (trim($line) && strpos($line, '=') !== false) {
-        list($name, $value) = explode('=', trim($line), 2);
-        putenv("$name=$value");
-        $_ENV[$name] = $value;
-        $_SERVER[$name] = $value;
+if (!isset($_ENV['user_mail'])) {
+    $lines = file(__DIR__ . '/.env');
+    foreach ($lines as $line) {
+        if (trim($line) && strpos($line, '=') !== false) {
+            list($name, $value) = explode('=', trim($line), 2);
+            putenv("$name=$value");
+            $_ENV[$name] = $value;
+            $_SERVER[$name] = $value;
+        }
     }
 }
 
