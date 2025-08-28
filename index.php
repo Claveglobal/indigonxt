@@ -378,6 +378,8 @@
             <option>No quiero que me contacten</option>
           </select>
           <button type="submit" class="ripple relative overflow-hidden bg-dark text-white px-6 py-2 rounded-full transition-all duration-300 hover:-translate-y-0.5 hover:shadow-lg hover:bg-secondary border-dark border-[1px] border-solid hover:text-dark">Enviar</button>
+          <input type="hidden" name="origen" value="Landing Indigo">
+          <input type="hidden" name="fuente" id="fuente">
         </form>
         <div id="error-message" class="hidden text-red-500 mt-4"></div>
       </div>
