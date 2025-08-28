@@ -28,11 +28,13 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $telefono = htmlspecialchars($_POST['telefono']);
         $interes = htmlspecialchars($_POST['interes']);
         $contacto = htmlspecialchars($_POST['contacto']);
+        $origen = htmlspecialchars($_POST['origen']);
+        $fuente = htmlspecialchars($_POST['fuente']);
 
         // Simulate email sending logic
         $to = "nxt@somosnxt.com";
         $subject = "Nuevo contacto desde el formulario";
-        $message = "Nombre: $nombre\nEmail: $email\nTeléfono: $telefono\nInterés: $interes\nContacto preferido: $contacto";
+        $message = "Nombre: $nombre\nEmail: $email\nTeléfono: $telefono\nInterés: $interes\nContacto preferido: $contacto\nOrigen: $origen\nFuente: $fuente";
         $headers = "From: $email";
 
         $mail = new PHPMailer(true);
