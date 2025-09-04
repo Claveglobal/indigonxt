@@ -145,7 +145,7 @@
         <img src="images/whatsapp.svg" alt="WhatsApp" class="w-12 h-12 md:w-16 md:h-16">
       </a>
     </div>-->
-    <div class="absolute w-10/12 bottom-0 sm:bottom-6 left-1/2 transform -translate-x-1/2 text-white text-[10px] sm:text-[14px] z-10">
+    <div class="relative mt-10 sm:mt-0 sm:absolute w-10/12 bottom-0 sm:bottom-6 left-1/2 transform -translate-x-1/2 text-white text-[10px] sm:text-[14px] z-10">
       <p>*Los metros expresados se consideran estimados pudiendo estos no resultar ser los definitivos de la unidad funcional. Los metros finales no podrán tener una variación menor ni mayor al 5% de los mencionados.<br>
         ** La financiación se estipula en 30 cuotas, iguales, mensuales y consecutivas a abonar en dólares estadounidenses billetes.</p>
     </div>
