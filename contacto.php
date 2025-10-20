@@ -23,6 +23,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
 
     if ((isset($_POST["email"])) && ($_POST["email"] != "")) {
 
+        // Honeypot validation - if filled, it's likely a bot
+        if (!empty($_POST['website'])) {
+            // Silently reject the form submission
+            echo "ok";
+            exit();
+        }
         $nombre = htmlspecialchars($_POST['nombre']);
         $email = htmlspecialchars($_POST['email']);
         $telefono = htmlspecialchars($_POST['telefono']);
