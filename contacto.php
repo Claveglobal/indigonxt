@@ -31,7 +31,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         }
         $nombre = htmlspecialchars($_POST['nombre']);
         $email = htmlspecialchars($_POST['email']);
-        $telefono = htmlspecialchars($_POST['telefono']);
+        $telefono = htmlspecialchars($_POST['codigo_pais']) . ' ' . htmlspecialchars($_POST['telefono']);
         $interes = htmlspecialchars($_POST['interes']);
         $contacto = htmlspecialchars($_POST['contacto']);
         $origen = htmlspecialchars($_POST['origen']);

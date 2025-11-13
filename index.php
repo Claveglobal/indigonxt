@@ -107,12 +107,16 @@
       }
     }
   </script>
-  <link rel="stylesheet" href="main.css?v=1" />
+  <link rel="stylesheet" href="main.css?v=2" />
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <!-- intl-tel-input CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.4/build/css/intlTelInput.css">
   <!-- Swiper JS -->
   <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+  <!-- intl-tel-input JS -->
+  <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.4/build/js/intlTelInput.min.js"></script>
+  <script type="text/javascript" src="https://api.clientify.net/web-marketing/webforms/external/script/264851.js"></script>
 </head>
 
 <body class="font-sans text-gray-800">
@@ -362,7 +366,10 @@
             <input type="text" name="nombre" placeholder="Nombre" class="w-6/12 border px-4 py-2 rounded" required>
             <input type="email" name="email" placeholder="Email" class="w-6/12 border px-4 py-2 rounded" required>
           </div>
-          <input type="text" name="telefono" placeholder="Teléfono" class="w-full border px-4 py-2 rounded" required>
+          <div>
+            <input type="tel" id="telefono" name="telefono" class="w-full border px-4 py-2 rounded" required>
+            <input type="hidden" name="codigo_pais" id="codigo_pais">
+          </div>
           <p class="text-dark">Nuestros proyectos tienen un mínimo de USD 690.000, ¿te interesa invertir con nosotros?</p>
           <select name="interes" class="w-full border px-4 py-2 rounded" required>
             <option value="">Seleccioná una respuesta</option>
@@ -429,9 +436,22 @@
       });
     });
 
+    // Inicializar intl-tel-input
+    const phoneInput = document.querySelector("#telefono");
+    const iti = window.intlTelInput(phoneInput, {
+      initialCountry: "ar",
+      preferredCountries: ["ar", "us", "br", "uy", "cl"],
+      separateDialCode: true,
+      utilsScript: "https://cdn.jsdelivr.net/npm/intl-tel-input@23.0.4/build/js/utils.js"
+    });
+
     // JavaScript para el formulario de contacto
     document.querySelector('form').addEventListener('submit', async function(event) {
       event.preventDefault();
+
+      // Actualizar el código de país antes de enviar
+      const selectedCountryData = iti.getSelectedCountryData();
+      document.getElementById('codigo_pais').value = '+' + selectedCountryData.dialCode;
 
       const formData = new FormData(this);
       const errorMessageDiv = document.getElementById('error-message');

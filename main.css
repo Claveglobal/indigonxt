@@ -220,3 +220,21 @@
 #gallerysmall .swiper-pagination-bullet-active {
   background-color: #fff !important;
 }
+
+/* Estilos para intl-tel-input */
+.iti {
+  width: 100%;
+}
+
+.iti__flag-container {
+  padding: 0.5rem;
+}
+
+.iti__selected-flag {
+  padding: 0 0.75rem;
+}
+
+.iti input[type="tel"] {
+  width: 100%;
+  padding-left: 52px;
+}
