@@ -136,7 +136,7 @@
           en Nordelta desde <span class="text-secondary ">U$D 690.000</span>
         </h1>
         <p class="mt-4 text-base md:text-[24px] canela-light leading-normal animate-fade-in-up animation-delay-400">Semipisos de 189 m<sup>2</sup> totales*: de 2 dormitorios en suite con dependencia o 3 dormitorios en suite. Amplias vistas, arquitectura de categoría en un entorno natural.<br><br>
-          <span class="inline">- Fecha entrega Marzo 2026<br>
+          <span class="inline">- Fecha entrega Abril 2026<br>
             - Anticipo 35% al boleto y financiación en 30 cuotas**</span>
         </p>
         <a href="/#formulario" class="shimmer ripple relative overflow-hidden mt-6 inline-block bg-[#f4851f] text-white px-4 md:px-6 py-2 md:py-3 rounded-full inter font-normal transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:scale-105 animate-fade-in-up animation-delay-600 text-[18px] sm:text-sm md:text-base" cta="hero">Agendá una visita</a>
