@@ -132,12 +132,11 @@
     <div class="relative z-10 h-full flex justify-center md:justify-end px-4 md:px-20 text-white sm:text-dark" id="hero-content">
       <div class="w-full md:w-5/12 text-center md:text-left md:mr-12 animate-fade-in-up px-4 md:px-0 mt-[190px] sm:mt-0">
         <h1 class="text-2xl md:text-[38px] canela-light leading-tight mt-32 animate-fade-in-up animation-delay-200">
-          Tu próxima inversión <br>
-          en Nordelta desde <span class="text-secondary ">U$D 690.000</span>
+          Nordelta, tu próxima gran inversión
         </h1>
-        <p class="mt-4 text-base md:text-[24px] canela-light leading-normal animate-fade-in-up animation-delay-400">Semipisos de 189 m<sup>2</sup> totales*: de 2 dormitorios en suite con dependencia o 3 dormitorios en suite. Amplias vistas, arquitectura de categoría en un entorno natural.<br><br>
-          <span class="inline">- Fecha entrega Abril 2026<br>
-            - Anticipo 35% al boleto y financiación en 30 cuotas**</span>
+        <p class="mt-4 text-base md:text-[24px] canela-light leading-normal animate-fade-in-up animation-delay-400">Semipisos de 189 m<sup>2</sup> totales*:  de 2 dormitorios en suite con dependencia o 3 dormitorios en suite con lavadero. Amplias vistas al río con arquitectura de categoría en un entorno natural. <br><br>
+          <span class="inline">- Entrega 2026<br>
+            - Anticipo 50% al boleto y financiación en 20 cuotas**</span>
         </p>
         <a href="/#formulario" class="shimmer ripple relative overflow-hidden mt-6 inline-block bg-[#f4851f] text-white px-4 md:px-6 py-2 md:py-3 rounded-full inter font-normal transition-all duration-300 hover:-translate-y-1 hover:shadow-xl hover:scale-105 animate-fade-in-up animation-delay-600 text-[18px] sm:text-sm md:text-base" cta="hero">Agendá una visita</a>
       </div>
