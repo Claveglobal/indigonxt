@@ -130,11 +130,11 @@
 
     <!-- Hero content -->
     <div class="relative z-10 h-full flex justify-center md:justify-end px-4 md:px-20 text-white sm:text-dark" id="hero-content">
-      <div class="w-full md:w-5/12 text-center md:text-left md:mr-12 animate-fade-in-up px-4 md:px-0 mt-[190px] sm:mt-0">
+      <div class="w-full md:w-6/12 text-center md:text-left md:mr-12 animate-fade-in-up px-4 md:px-0 mt-[180px] sm:mt-0">
         <h1 class="text-2xl md:text-[38px] canela-light leading-tight mt-32 animate-fade-in-up animation-delay-200">
           Nordelta, tu próxima gran inversión
         </h1>
-        <p class="mt-4 text-base md:text-[24px] canela-light leading-normal animate-fade-in-up animation-delay-400">Semipisos de 189 m<sup>2</sup> totales*:  de 2 dormitorios en suite con dependencia o 3 dormitorios en suite con lavadero. Amplias vistas al río con arquitectura de categoría en un entorno natural. <br><br>
+        <p class="mt-4 text-base md:text-[22px] canela-light leading-normal animate-fade-in-up animation-delay-400">Semipisos de 189 m<sup>2</sup> totales*:  de 2 dormitorios en suite con dependencia o 3 dormitorios en suite con lavadero. Amplias vistas al río con arquitectura de categoría en un entorno natural. <br><br>
           <span class="inline">- Entrega 2026<br>
             - Anticipo 50% al boleto y financiación en 20 cuotas**</span>
         </p>
@@ -150,7 +150,7 @@
     </div>-->
     <div class="relative mt-10 sm:mt-0 sm:absolute w-10/12 bottom-0 sm:bottom-6 left-1/2 transform -translate-x-1/2 text-white text-[10px] sm:text-[14px] z-10">
       <p>*Los metros expresados se consideran estimados pudiendo estos no resultar ser los definitivos de la unidad funcional. Los metros finales no podrán tener una variación menor ni mayor al 5% de los mencionados.<br>
-        ** La financiación se estipula en 30 cuotas, iguales, mensuales y consecutivas a abonar en dólares estadounidenses billetes.</p>
+        ** La financiación se estipula en 20 cuotas, iguales, mensuales y consecutivas a abonar en dólares estadounidenses billetes.</p>
     </div>
     <div class=""></div>
   </section>
